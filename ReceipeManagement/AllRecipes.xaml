@@ -1,0 +1,47 @@
+﻿<Window x:Class="poedraft.AllRecipes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:poedraft"
+        mc:Ignorable="d"
+        Title="AllRecipes" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="RecipeBook" FontWeight="Bold" Foreground="#FF6347" FontFamily="Segoe Print" Margin="329,11,329,383" FontSize="22"/>
+        <Image Margin="268,6,471,378" Source="/coooking logo.jpeg" Stretch="Fill"/>
+        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="622"/>
+        <TextBox x:Name="txtIngredients" HorizontalAlignment="Left" Height="28" Margin="23,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
+        <Rectangle HorizontalAlignment="Left" Height="316" Margin="198,89,0,0" Stroke="Black" VerticalAlignment="Top" Width="0"/>
+        <Rectangle HorizontalAlignment="Left" Height="263" Margin="198,142,0,0" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+        <TextBox x:Name="txtCalories" HorizontalAlignment="Left" Height="28" Margin="23,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
+        <ComboBox x:Name="cmbFoodGroup" HorizontalAlignment="Left" Height="21" Margin="23,249,0,0" VerticalAlignment="Top" Width="158" >
+            <ComboBoxItem Content="Starchy foods"/>
+            <ComboBoxItem Content="Vegetables and fruits"/>
+            <ComboBoxItem Content="Dry beans, peas, lentils and soya"/>
+            <ComboBoxItem Content="Chicken, fish, meat and eggs"/>
+            <ComboBoxItem Content="Milk and dairy products"/>
+            <ComboBoxItem Content="Fats and oil"/>
+            <ComboBoxItem Content="Water"/>
+
+        </ComboBox>
+
+        <Label Content="FILTER YOUR RESULTS BY:" HorizontalAlignment="Left" Height="26" Margin="23,142,0,0" VerticalAlignment="Top" Width="158" FontWeight="Bold"/>
+        <Label Content="FoodGroup:" HorizontalAlignment="Left" Height="27" Margin="23,221,0,0" VerticalAlignment="Top" Width="150"/>
+        <ListBox x:Name="lstRecipes" HorizontalAlignment="Left" Height="84" Margin="225,100,0,0" VerticalAlignment="Top" Width="155" SelectionChanged="lstRecipes_SelectionChanged"/>
+        <Label Content="RECIPES:" HorizontalAlignment="Left" Height="34" Margin="225,58,0,0" VerticalAlignment="Top" Width="143" FontWeight="Bold" FontSize="18" FontFamily="Segoe Print"/>
+        <Button x:Name="btnNewRecipe" Content="Create New Recipe" HorizontalAlignment="Left" Height="34" Margin="677,58,0,0" VerticalAlignment="Top" Width="113" Click="btnNewRecipe_Click" BorderBrush="Tomato" Background="Tomato"/>
+        <Button x:Name="btnFilter" Content="Filter" HorizontalAlignment="Left" Height="33" Margin="39,347,0,0" VerticalAlignment="Top" Width="134" Click="btnFilter_Click" Background="Tomato"/>
+        <ListBox x:Name="lstIngredients1" HorizontalAlignment="Left" Height="166" Margin="214,252,0,0" VerticalAlignment="Top" Width="226"/>
+        <ListBox x:Name="lstSteps1" HorizontalAlignment="Left" Height="156" Margin="445,259,0,0" VerticalAlignment="Top" Width="224"/>
+        <TextBlock x:Name="txtTitle" HorizontalAlignment="Left" Height="24" Margin="225,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lstIngredients" Content="Ingredients:" HorizontalAlignment="Left" Height="26" Margin="214,226,0,0" VerticalAlignment="Top" Width="166" FontWeight="Bold" FontFamily="Tahoma"/>
+        <Label x:Name="lstSteps" Content="Steps:" HorizontalAlignment="Left" Height="26" Margin="445,233,0,0" VerticalAlignment="Top" Width="121" FontWeight="Bold" FontFamily="Tahoma"/>
+        <TextBlock x:Name="txtCalories1" HorizontalAlignment="Left" Height="25" Margin="685,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" FontWeight="Bold"/>
+        <Button x:Name="btnSearch" Content="Search:" HorizontalAlignment="Left" Height="29" Margin="485,168,0,0" VerticalAlignment="Top" Width="81" Click="btnSearch_Click" Background="Tomato"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="25" Margin="426,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Label x:Name="lblSearch" Content="Search Name of Recipe from List:" HorizontalAlignment="Left" Height="26" Margin="426,107,0,0" VerticalAlignment="Top" Width="195" FontWeight="Bold"/>
+        <Label Content="Filter by Calories:" HorizontalAlignment="Left" Height="25" Margin="23,275,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label Content="Search by Ingredient:" HorizontalAlignment="Left" Height="27" Margin="23,168,0,0" VerticalAlignment="Top" Width="130"/>
+
+    </Grid>
+</Window>

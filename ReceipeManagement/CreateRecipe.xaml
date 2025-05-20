@@ -1,0 +1,76 @@
+﻿<Window x:Class="poedraft.CreateRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:poedraft"
+        mc:Ignorable="d"
+        Title="CreateRecipe" Height="457" Width="800">
+    <Grid>
+        <TextBlock Text="RecipeBook" FontWeight="Bold" Foreground="#FF6347" FontFamily="Segoe Print" Margin="329,11,329,383" FontSize="22"/>
+        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="622"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="20" Margin="114,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <ListBox x:Name="lstIngredients" HorizontalAlignment="Left" Height="278" Margin="474,74,0,0" VerticalAlignment="Top" Width="237"/>
+        <Image Margin="268,6,471,378" Source="/coooking logo.jpeg" Stretch="Fill"/>
+        <Label Content="Enter the name of recipe:" HorizontalAlignment="Left" Height="27" Margin="114,51,0,0" VerticalAlignment="Top" Width="171"/>
+        <TextBox x:Name="txtQuantity" HorizontalAlignment="Left" Height="20" Margin="114,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Enter the quantity:" HorizontalAlignment="Left" Height="28" Margin="116,156,0,0" VerticalAlignment="Top" Width="171" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-2.545"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.622"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txtUnitOfMeasurement" HorizontalAlignment="Left" Height="20" Margin="114,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Enter unit of measurement:" HorizontalAlignment="Left" Height="28" Margin="116,206,0,0" VerticalAlignment="Top" Width="171" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-2.545"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.622"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="txtCalories" HorizontalAlignment="Left" Height="20" Margin="114,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Enter number of calories:" HorizontalAlignment="Left" Height="28" Margin="116,259,0,0" VerticalAlignment="Top" Width="171" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-2.545"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.622"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Choose food group:" HorizontalAlignment="Left" Height="28" Margin="116,313,0,0" VerticalAlignment="Top" Width="171" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-2.545"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.622"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ComboBox x:Name="cmbFoodGroup" HorizontalAlignment="Left" Height="25" Margin="114,336,0,0" VerticalAlignment="Top" Width="194">
+            <ComboBoxItem Content="Starchy foods"/>
+            <ComboBoxItem Content="Vegetables and fruits"/>
+            <ComboBoxItem Content="Dry beans, peas, lentils and soya"/>
+            <ComboBoxItem Content="Chicken, fish, meat and eggs"/>
+            <ComboBoxItem Content="Milk and dairy products"/>
+            <ComboBoxItem Content="Fats and oil"/>
+            <ComboBoxItem Content="Water"/>
+
+
+
+        </ComboBox>
+        <TextBox x:Name="txtIngredient" HorizontalAlignment="Left" Height="20" Margin="114,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Enter name of ingredient :" HorizontalAlignment="Left" Height="27" Margin="114,108,0,0" VerticalAlignment="Top" Width="171"/>
+        <Button x:Name="btnAddIngredient" Content="Add Ingredient" HorizontalAlignment="Left" Height="40" Margin="131,380,0,0" VerticalAlignment="Top" Width="167" Click="btnAddIngredient_Click" Background="Tomato"/>
+        <Button x:Name="btnSteps" Content="Add Steps" HorizontalAlignment="Left" Height="40" Margin="527,380,0,0" VerticalAlignment="Top" Width="156" Click="btnSteps_Click" Background="Tomato"/>
+    </Grid>
+</Window>

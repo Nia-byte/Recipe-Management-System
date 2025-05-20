@@ -1,0 +1,20 @@
+﻿<Window x:Class="poedraft.CreateSteps"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:poedraft"
+        mc:Ignorable="d"
+        Title="CreateSteps" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtSteps" HorizontalAlignment="Left" Height="20" Margin="120,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Enter the steps:" HorizontalAlignment="Left" Height="27" Margin="120,99,0,0" VerticalAlignment="Top" Width="171"/>
+        <ListBox x:Name="lstSteps" HorizontalAlignment="Left" Height="368" Margin="449,56,0,0" VerticalAlignment="Top" Width="277"/>
+        <TextBlock Text="RecipeBook" FontWeight="Bold" Foreground="#FF6347" FontFamily="Segoe Print" Margin="329,11,329,383" FontSize="22"/>
+        <Image Margin="268,6,471,378" Source="/coooking logo.jpeg" Stretch="Fill"/>
+        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="622"/>
+        <Button x:Name="btnDisplay" Content="Display" HorizontalAlignment="Left" Height="45" Margin="120,301,0,0" VerticalAlignment="Top" Width="192" Click="btnDisplay_Click" Background="Tomato"/>
+        <Button x:Name="btnAddStep" Content="Add Step" HorizontalAlignment="Left" Height="40" Margin="120,240,0,0" VerticalAlignment="Top" Width="192" Click="btnAddStep_Click" Background="Tomato"/>
+
+    </Grid>
+</Window>
